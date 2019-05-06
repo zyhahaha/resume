@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  height: 30px;
+  /* background-color: aqua; */
+}
+
+.line{
+  height: 20px;
+}
+.line .row{
+  display: inline-block;
+  height: 100%;
+  background-color: #000;
+  vertical-align: top;
+  color: #fff;
+}
+.line .row-1{
+  width: 5px;
+}
+.line .row-2{
+  width: 3px;
+}
+.line .row-3{
+  width: 30px;
+}
