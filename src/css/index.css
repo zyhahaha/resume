@@ -12,6 +12,9 @@
 }
 
 /* header */
+.header {
+  padding: 45px 80px;
+}
 .line-header {
   height: 20px;
   line-height: 20px;
@@ -29,7 +32,26 @@
   height: 5px;
 }
 
+.name{
+  overflow: hidden;
+  padding-bottom: 35px;
+}
+.info{
+  overflow: hidden;
+}
+.info p{
+  overflow: hidden;
+  padding-bottom: 15px;
+}
+
 /* content */
+.content{
+  padding-top: 20px;
+}
+.content .content-li{
+  padding: 15px 0;
+  padding-left: 35px;
+}
 .line-content{
   height: 20px;
   line-height: 20px;
@@ -51,4 +73,13 @@
 }
 .line-content .row-3{
   width: 50px;
+}
+
+
+/* common */
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
 }
