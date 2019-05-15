@@ -2,34 +2,10 @@
   /* height: 30px; */
   /* background-color: aqua; */
 }
-.row{
-  display: inline-block;
-  height: 100%;
-  background-color: #000;
-  vertical-align: top;
-  color: #fff;
-  text-align: center;
-}
 
 /* header */
 .header {
   padding: 45px 80px;
-}
-.line-header {
-  height: 20px;
-  line-height: 20px;
-}
-.line-header .row-1 {
-  width: 5px;
-}
-.line-header .row-2 {
-  width: 70px;
-}
-.line-header .row-3 {
-  width: 5px;
-}
-.line-bottom{
-  height: 5px;
 }
 
 .name{
@@ -52,34 +28,6 @@
   padding: 15px 0;
   padding-left: 35px;
 }
-.line-content{
-  height: 20px;
-  line-height: 20px;
-  background-color: #ccc;
-}
-.line-content .row-1{
-  width: 8px;
-  /* margin-right: 2px; */
-}
-/* .line-content .row-2:before{
-  display: block;
-  content: '';
-  width: 3px;
-  height: 100%;
-  background-color: #fff;
-} */
-.line-content .row-2{
-  width: 3px;
-}
-.line-content .row-3{
-  width: 50px;
-}
 
 
-/* common */
-.fl {
-  float: left;
-}
-.fr {
-  float: right;
-}
+
