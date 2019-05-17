@@ -60,6 +60,9 @@
 
 /* input content */
 .comment{
+  padding-bottom: 2rem;
+  margin-bottom: 0.3rem;
+  border-bottom: 1px solid #ccc;
   font-size: 0.12rem;
 }
 .comment-floor{

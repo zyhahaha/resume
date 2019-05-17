@@ -32,7 +32,7 @@
         </div>
 
         <!-- 内容部分 -->
-        <div class="main-content">
+        <div id="app" class="main-content">
           <div class="input-wrap">
             <h1>liu yan</h1>
             <div class="input-content">
@@ -46,12 +46,12 @@
             <button>btn</button>
           </div>
           <!-- input content -->
-          <div class="comment">
-            <p class="comment-floor">18</p>
+          <div class="comment" v-for="(item, index) in commentList">
+            <p class="comment-floor">{{item.floor}}</p>
             <p class="comment-avatar"></p>
             <div class="comment-content">
-              <p class="comment-author">author</p>
-              <p class="comment-detail">detail</p>
+              <p class="comment-author">{{item.author}}</p>
+              <p class="comment-detail">{{item.detail}}</p>
               <p class="comment-action">reply</p>
             </div>
           </div>
@@ -61,6 +61,8 @@
     <!-- <script src="./src/js/jquery-1.11.1.min.js"></script> -->
     <script src="./src/js/common/device-init.js"></script>
     <script src="./src/js/common/ajax.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="./src/js/message.js"></script>
     <script>
       // $(document).ready(function() {
       //   $('.header-box').addClass('fadein');
