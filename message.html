@@ -40,18 +40,18 @@
                 test
               </div>
               <div class="input">
-                <textarea></textarea>
+                <textarea v-model="commentMsg"></textarea>
               </div>
             </div>
-            <button>btn</button>
+            <button @click="sendMsg">btn</button>
           </div>
           <!-- input content -->
           <div class="comment" v-for="(item, index) in commentList">
             <p class="comment-floor">{{item.floor}}</p>
             <p class="comment-avatar"></p>
             <div class="comment-content">
-              <p class="comment-author">{{item.author}}</p>
-              <p class="comment-detail">{{item.detail}}</p>
+              <p class="comment-author">{{item.author}} &nbsp; <span>{{item.date}}</span></p>
+              <p class="comment-detail">{{item.comment}}</p>
               <p class="comment-action">reply</p>
             </div>
           </div>
