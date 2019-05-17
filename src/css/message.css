@@ -1,17 +1,36 @@
 .main-content {
   padding: 0.2rem;
 }
+/* input */
+.input-wrap{
+  overflow: hidden;
+  margin-bottom: 0.4rem;
+}
 .input-wrap h1 {
   text-align: center;
+  margin-bottom: 0.4rem;
 }
-.input-content{
+.input-wrap button {
+  padding: 0.2rem 0;
+  width: 100%;
+  min-width: 1.5rem;
+  margin: 0.1rem 0;
+  display: block;
+  float: right;
+  background: #f7f3ee;
+  color: #9e886c;
+  border-radius: 5px;
+  border: 1px solid #e7ded2;
+}
+.input-content {
   position: relative;
-  height: 150px;
+  height: 3rem;
+  margin-bottom: 0.4rem;
 }
 .input-toolbar {
-  height: 40px;
-  line-height: 40px;
-  padding-left: 10px;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  padding-left: 0.1rem;
   background: #f7f3ee;
   border-radius: 5px 5px 0 0;
   text-align: left;
@@ -23,11 +42,48 @@
   top: 1px;
   right: 1px;
 }
+.input {
+  height: 100%;
+}
 .input textarea {
   width: 100%;
   height: 100%;
-  min-height: 32px;
+  min-height: 0.32rem;
   display: block;
-  padding-top: 50px;
+  padding: 0.04rem 0.11rem;
+  padding-top: 0.5rem;
   border-radius: 5px;
+}
+.input textarea:hover {
+  border-color: #faad14;
+}
+
+/* input content */
+.comment{
+  font-size: 0.12rem;
+}
+.comment-floor{
+  padding: 0.2rem 0rem;
+}
+.comment-avatar{
+  float: left;
+  width: 0.35rem;
+  height: 0.35rem;
+  border: 1px solid #000;
+  border-radius: 100%;
+}
+.comment-content{
+  float: left;
+  margin-left: 0.2rem;
+}
+.comment-author{
+  color: rgba(0,0,0,.45);
+}
+.comment-detail{
+  padding: 0.05rem 0rem;
+  font-size: 0.14rem;
+}
+.comment-action{
+  margin-left: 0.1rem;
+  color: rgba(0,0,0,.45);
 }

@@ -4,7 +4,7 @@
  */
 !(function(window) {
   /* 设计图文档宽度 */
-  var docWidth = 750;
+  var docWidth = 375;
 
   var doc = window.document,
     docEl = doc.documentElement,
