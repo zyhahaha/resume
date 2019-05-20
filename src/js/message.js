@@ -26,7 +26,8 @@ var vm = new Vue({
   },
   methods: {
     sendMsg: function(){
-      let params = {
+      var that = this;
+      var params = {
         author: 'TEST',
         comment: this.commentMsg
       };
@@ -40,12 +41,12 @@ var vm = new Vue({
         function() {
           params.tim = Date.now();
           this.mockData.push(params);
-          that.handleCommentList(this.mockData);
+          that.handleCommentList(that.mockData);
         }
       );
     },
     initData: function() {
-      let that = this;
+      var that = this;
       ajax(
         'get',
         '/cv/query',
@@ -54,12 +55,13 @@ var vm = new Vue({
           that.handleCommentList(res);
         },
         function() {
-          that.handleCommentList(this.mockData);
+          that.handleCommentList(that.mockData);
         }
       );
     },
     handleCommentList: function(data){
-      let commentList = data;
+      var that = this;
+      var commentList = data;
       typeof commentList === 'string' && (commentList = JSON.parse(commentList));
       commentList.forEach((item, index) => {
         item.floor = index;
