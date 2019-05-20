@@ -2,24 +2,22 @@ var vm = new Vue({
   el: '#app',
   data: {
     commentMsg: '',
-    commentList: [
+    commentList: [],
+    mockData: [
       {
-        floor: 2,
         author: 'author',
-        comment: 'flofloorfloor comment',
-        date: '18'
+        comment: 'floflidoor comment  ',
+        tim: Date.now() - 10000000
       },
       {
-        floor: 3,
-        author: 'author',
-        comment: 'flofloorfloor comment',
-        date: '18'
+        author: 'test',
+        comment: 'test comment',
+        tim: Date.now() - 6000000
       },
       {
-        floor: 2,
-        author: 'author',
+        author: 'vvvvvip',
         comment: 'flofloorfloor comment',
-        date: '18'
+        tim: Date.now() - 100000
       }
     ]
   },
@@ -39,7 +37,11 @@ var vm = new Vue({
         function(res) {
           window.location.reload();
         },
-        function() {}
+        function() {
+          params.tim = Date.now();
+          this.mockData.push(params);
+          that.handleCommentList(this.mockData);
+        }
       );
     },
     initData: function() {
@@ -49,17 +51,21 @@ var vm = new Vue({
         '/cv/query',
         {},
         function(res) {
-          let commentList = res;
-          commentList = JSON.parse(commentList);
-          commentList.forEach((item, index) => {
-            item.floor = index;
-            item.date = that.timeElapse(item.tim);
-          });
-          that.commentList = commentList;
-          console.log(commentList);
+          that.handleCommentList(res);
         },
-        function() {}
+        function() {
+          that.handleCommentList(this.mockData);
+        }
       );
+    },
+    handleCommentList: function(data){
+      let commentList = data;
+      typeof commentList === 'string' && (commentList = JSON.parse(commentList));
+      commentList.forEach((item, index) => {
+        item.floor = index;
+        item.date = that.timeElapse(item.tim);
+      });
+      that.commentList = commentList;
     },
     timeElapse: function(dateTim){
       var current = Date();
