@@ -3,24 +3,24 @@ var vm = new Vue({
   data: {
     commentMsg: '',
     commentList: [
-      // {
-      //   floor: 2,
-      //   author: 'author',
-      //   comment: 'flofloorfloor comment',
-      //   date: '18'
-      // },
-      // {
-      //   floor: 3,
-      //   author: 'author',
-      //   comment: 'flofloorfloor comment',
-      //   date: '18'
-      // },
-      // {
-      //   floor: 2,
-      //   author: 'author',
-      //   comment: 'flofloorfloor comment',
-      //   date: '18'
-      // }
+      {
+        floor: 2,
+        author: 'author',
+        comment: 'flofloorfloor comment',
+        date: '18'
+      },
+      {
+        floor: 3,
+        author: 'author',
+        comment: 'flofloorfloor comment',
+        date: '18'
+      },
+      {
+        floor: 2,
+        author: 'author',
+        comment: 'flofloorfloor comment',
+        date: '18'
+      }
     ]
   },
   created: function() {
