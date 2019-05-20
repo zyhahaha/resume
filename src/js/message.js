@@ -40,7 +40,7 @@ var vm = new Vue({
         },
         function() {
           params.tim = Date.now();
-          this.mockData.push(params);
+          that.mockData.push(params);
           that.handleCommentList(that.mockData);
         }
       );
