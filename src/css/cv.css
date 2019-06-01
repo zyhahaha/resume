@@ -69,6 +69,8 @@ body {
 /* ### main ### */
 /* cv */
 .main-content {
+  max-width: 800px;
+  margin: auto;
   padding: 0.2rem;
   background-color: #fff;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.15);
