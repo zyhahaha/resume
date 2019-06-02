@@ -7,41 +7,39 @@ body {
   background: url('../images/whitebg.jpg') repeat;
   font-family: 'Microsoft Yahei';
   color: #787978;
-  font-size: 0.18rem;
+  font-size: 0.24rem;
 }
 .header-box {
   padding-top: 1rem;
-  padding-bottom: 0.2rem;
+  padding-bottom: 0.8rem;
   text-align: center;
 }
 .header-box img {
   display: inline-block;
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1.4rem;
+  height: 1.4rem;
   border: 1px solid #000;
   border-radius: 50%;
 }
 .myid {
   color: #948c76;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.8rem;
   text-align: center;
 }
 .myid p {
-  background: #f7f3ee;
-  font-size: 1.3em;
-  font-weight: 400;
-  padding: 0 0.5em;
-  letter-spacing: 0.1em;
-  line-height: 2em;
-  margin: 2em 0;
   display: inline-block;
+  background: #f7f3ee;
+  font-size: 0.24rem;
+  font-weight: 400;
+  padding: 0.1rem 0.15rem;
+  /* margin: 0.2rem 0; */
 }
 .my-sort {
   margin: 0 0 1.2rem;
   text-align: center;
 }
 .my-sort a {
-  margin: 0 0.71rem;
+  margin: 0 0.2rem;
 }
 
 /* top */
@@ -81,7 +79,7 @@ body {
   padding-left: 0.15rem;
   border-left: 0.05rem solid #e38fa9;
   text-align: left;
-  font-size: 0.18rem;
+  font-size: 0.24rem;
   font-weight: bold;
 }
 .main-content .section {
