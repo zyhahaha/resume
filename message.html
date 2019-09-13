@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=0;"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>留言</title>
+    <link rel="stylesheet" href="./src/css/cv.css" />
+    <link rel="stylesheet" href="./src/css/message.css" />
+  </head>
+  <body>
+    <div>
+      <div class="container">
+        <div class="header">
+          <div id="top">
+            <img src="./src/images/top.png" alt="" />
+          </div>
+          <div class="header-box">
+            <img src="./src/images/header.jpg" alt="" />
+          </div>
+          <div class="myid">
+            <p>ZhaoYang</p>
+          </div>
+          <div class="my-sort">
+            <a href="cv.html">关于我</a>
+            <a href="index.html">博客</a>
+            <a href="message.html">留言</a>
+          </div>
+        </div>
+
+        <!-- 内容部分 -->
+        <div id="app" class="main-content">
+          <div class="input-wrap">
+            <h1>留 言</h1>
+            <div class="input-content">
+              <div class="input-toolbar">
+                tips:
+              </div>
+              <div class="input">
+                <textarea v-model="commentMsg"></textarea>
+              </div>
+            </div>
+            <button @click="sendMsg">发 送</button>
+          </div>
+          <!-- input content -->
+          <div class="comment" v-for="(item, index) in commentList">
+            <p class="comment-floor">{{item.floor}}</p>
+            <p class="comment-avatar"></p>
+            <div class="comment-content">
+              <p class="comment-author">{{item.author}} &nbsp; <span>{{item.date}}</span></p>
+              <p class="comment-detail">{{item.comment}}</p>
+              <p class="comment-action">回复</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./src/js/device-init.js"></script>
+    <!-- <script src="./src/js/common/ajax.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="./src/js/message.js"></script>
+  </body>
+</html>
