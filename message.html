@@ -48,9 +48,12 @@
           <!-- input content -->
           <div class="comment" v-for="(item, index) in commentList">
             <p class="comment-floor">{{item.floor}}楼</p>
-            <p class="comment-avatar"></p>
-            <div class="comment-content">
+            <div style="overflow: hidden;">
+              <p class="comment-avatar"></p>
               <p class="comment-author">{{item.author}} &nbsp; <span>{{item.date}}</span></p>
+            </div>
+            <div class="comment-content">
+              
               <p class="comment-detail">{{item.comment}}</p>
               <!-- <p class="comment-action">reply</p> -->
             </div>
