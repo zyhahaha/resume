@@ -22,20 +22,16 @@
   <div>
     <div class="container">
       <div class="header">
-        <!-- <div id="top">
-          <img src="./src/images/top.png" alt="" />
-        </div> -->
         <div class="header-box">
-          <img src="./src/images/header.jpg" alt="" />
+          <img src="./src/assets/images/header.jpg" alt="" />
         </div>
-        <div class="myid">
+        <!-- <div class="myid">
           <p>ZhaoYang</p>
-        </div>
+        </div> -->
         <div class="my-sort">
           <a href="cv.html">关于我</a>
           <a href="http://blog.123123.store">博客</a>
           <a href="message.html">留言</a>
-          <!-- <a href="#" onclick="alert('暂时关闭')">留言</a> -->
         </div>
       </div>
 
@@ -97,7 +93,7 @@
   </div>
   <script src="./src/js/common/device-init.js"></script>
   <script>
-    var el = document.getElementsByClassName('myid')[0];
+    var el = document.getElementsByClassName('header-box')[0];
     var downTime = '';
     el.addEventListener('click', function () {
       alert(downTime);

@@ -18,7 +18,7 @@ body {
   display: inline-block;
   width: 1.4rem;
   height: 1.4rem;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   border-radius: 50%;
 }
 .myid {

@@ -1,3 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url('../assets/images/whitebg.jpg') repeat;
+  font-family: 'Microsoft Yahei';
+  color: #787978;
+  font-size: 0.12rem;
+}
 .main-content {
   padding: 0.2rem;
 }
@@ -104,18 +115,7 @@
 
 
 /* ----------------- index.css -------------- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  background: url('../assets/images/whitebg.jpg') repeat;
-  font-family: 'Microsoft Yahei';
-  color: #787978;
-  font-size: 0.12rem;
-}
-.header-box {
+/* .header-box {
   padding-top: 1rem;
   padding-bottom: 0.2rem;
   text-align: center;
@@ -126,8 +126,8 @@ body {
   height: 1.2rem;
   border: 1px solid #000;
   border-radius: 50%;
-}
-.myid {
+} */
+/* .myid {
   color: #948c76;
   margin-bottom: 0.2rem;
   text-align: center;
@@ -141,11 +141,11 @@ body {
   line-height: 2em;
   margin: 2em 0;
   display: inline-block;
-}
-.my-sort {
+} */
+/* .my-sort {
   margin: 0 0 1.2rem;
   text-align: center;
 }
 .my-sort a {
   margin: 0 0.71rem;
-}
+} */
