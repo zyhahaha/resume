@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background: url('../images/whitebg.jpg') repeat;
+  background: url('../assets/images/whitebg.jpg') repeat;
   font-family: 'Microsoft Yahei';
   color: #787978;
   font-size: 0.24rem;
