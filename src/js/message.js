@@ -32,8 +32,8 @@ var vm = new Vue({
         comment: this.commentMsg
       };
       ajax(
-        'post',
-        '/cv/add',
+        'POST',
+        'http://api.123123.store/powerful',
         params,
         function(res) {
           window.location.reload();
@@ -47,10 +47,13 @@ var vm = new Vue({
     },
     initData: function() {
       var that = this;
+      var params = {
+        type: 'IP'
+      };
       ajax(
-        'get',
-        '/cv/query',
-        {},
+        'POST',
+        'http://api.123123.store/powerful/list',
+        params,
         function(res) {
           that.handleCommentList(res);
         },
