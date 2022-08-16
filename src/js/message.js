@@ -64,7 +64,7 @@ var vm = new Vue({
       var commentList = data;
       typeof commentList === 'string' && (commentList = JSON.parse(commentList));
       commentList.forEach((item, index) => {
-        item.floor = index;
+        item.floor = index + 1;
         item.date = that.timeElapse(item.tim);
       });
       that.commentList = commentList;

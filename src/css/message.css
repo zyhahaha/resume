@@ -8,6 +8,7 @@
 }
 .input-wrap h1 {
   text-align: center;
+  padding-top: 0.2rem;
   margin-bottom: 0.4rem;
 }
 .input-wrap button {
@@ -21,6 +22,7 @@
   color: #9e886c;
   border-radius: 5px;
   border: 1px solid #e7ded2;
+  cursor: pointer;
 }
 .input-content {
   position: relative;
@@ -57,6 +59,10 @@
 .input textarea:hover {
   border-color: #faad14;
 }
+.input textarea:focus-visible {
+  outline: 1px;
+  border-color: #faad14;
+}
 
 /* input content */
 .comment{
@@ -64,6 +70,9 @@
   margin-bottom: 0.3rem;
   border-bottom: 1px solid #ccc;
   font-size: 0.12rem;
+}
+.comment:last-child {
+  border-bottom: 0px;
 }
 .comment-floor{
   padding: 0.2rem 0rem;
@@ -86,10 +95,10 @@
   padding: 0.05rem 0rem;
   font-size: 0.14rem;
 }
-.comment-action{
+/* .comment-action{
   margin-left: 0.1rem;
   color: rgba(0,0,0,.45);
-}
+} */
 
 
 /* ----------------- index.css -------------- */
@@ -140,7 +149,7 @@ body {
 }
 
 /* top */
-#top {
+/* #top {
   width: 45px;
   height: 45px;
   background: #cccccc;
@@ -157,5 +166,5 @@ body {
 }
 #top:hover {
   opacity: 1;
-}
+} */
 

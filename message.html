@@ -14,7 +14,7 @@
   <body>
     <div>
       <div class="container">
-        <div class="header">
+        <!-- <div class="header">
           <div id="top">
             <img src="./src/images/top.png" alt="" />
           </div>
@@ -29,7 +29,7 @@
             <a href="index.html">博客</a>
             <a href="message.html">留言</a>
           </div>
-        </div>
+        </div> -->
 
         <!-- 内容部分 -->
         <div id="app" class="main-content">
@@ -40,19 +40,19 @@
                 test
               </div>
               <div class="input">
-                <textarea v-model="commentMsg"></textarea>
+                <textarea v-model="commentMsg" style="resize: none"></textarea>
               </div>
             </div>
-            <button @click="sendMsg">btn</button>
+            <button @click="sendMsg">发布</button>
           </div>
           <!-- input content -->
           <div class="comment" v-for="(item, index) in commentList">
-            <p class="comment-floor">{{item.floor}}</p>
+            <p class="comment-floor">{{item.floor}}楼</p>
             <p class="comment-avatar"></p>
             <div class="comment-content">
               <p class="comment-author">{{item.author}} &nbsp; <span>{{item.date}}</span></p>
               <p class="comment-detail">{{item.comment}}</p>
-              <p class="comment-action">reply</p>
+              <!-- <p class="comment-action">reply</p> -->
             </div>
           </div>
         </div>
