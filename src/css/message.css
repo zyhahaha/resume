@@ -149,24 +149,3 @@ body {
 .my-sort a {
   margin: 0 0.71rem;
 }
-
-/* top */
-/* #top {
-  width: 45px;
-  height: 45px;
-  background: #cccccc;
-  border-radius: 5px;
-  position: fixed;
-  right: 20px;
-  bottom: 10%;
-  cursor: pointer;
-  text-align: center;
-  line-height: 45px;
-  display: none;
-  z-index: 1000;
-  opacity: 0.6;
-}
-#top:hover {
-  opacity: 1;
-} */
-
