@@ -37,7 +37,7 @@ function ajax(type, url, data, success, failed) {
   // 处理返回数据
   xhr.onreadystatechange = function () {
     if (xhr.readyState === 4) {
-      if (xhr.status === 200) {
+      if (xhr.status >= 200 && xhr.status < 300) {
         if (success) {
           success(xhr.responseText);
         }
