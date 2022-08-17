@@ -27,10 +27,12 @@ var vm = new Vue({
   methods: {
     sendMsg: function(){
       var that = this;
-      var params = {
-        author: 'TEST',
-        comment: this.commentMsg
-      };
+      var params = JSON.stringify({
+        type: 'CV_MESSAGE',
+        content: 'TEST', // 昵称
+        content_two: 'url', // 头像
+        content_three: this.commentMsg // 内容
+      });
       ajax(
         'POST',
         'http://api.123123.store/powerful',
