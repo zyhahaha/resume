@@ -33,7 +33,7 @@ var vm = new Vue({
       };
       ajax(
         'POST',
-        'http://localhost:3000/powerful',
+        'http://api.123123.store/powerful',
         params,
         function(res) {
           window.location.reload();
@@ -54,7 +54,7 @@ var vm = new Vue({
       });
       ajax(
         'POST',
-        'http://localhost:3000/powerful/list',
+        'http://api.123123.store/powerful/list',
         params,
         function(res) {
           that.handleCommentList(res);
