@@ -9,6 +9,11 @@ body {
   color: #787978;
   font-size: 0.24rem;
 }
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
 .header-box {
   padding-top: 0.6rem;
   padding-bottom: 0.5rem;

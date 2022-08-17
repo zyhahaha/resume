@@ -10,7 +10,12 @@ body {
   background: url('../assets/images/whitebg.jpg') repeat;
   font-family: 'Microsoft Yahei';
   color: #787978;
-  font-size: 0.12rem;
+  font-size: 0.24rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
 }
 .main-content {
   padding: 0.2rem;
@@ -20,7 +25,7 @@ body {
   overflow: hidden;
   margin-bottom: 0.4rem;
 }
-.input-wrap h1 {
+.input-wrap h2 {
   text-align: center;
   padding-top: 0.2rem;
   margin-bottom: 0.4rem;
