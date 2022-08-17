@@ -28,7 +28,7 @@ function ajax(type, url, data, success, failed) {
     xhr.send();
   } else if (type === 'POST') {
     xhr.open('POST', url, true);
-    xhr.setRequestHeader("Content-type", "application/json; charset=utf-8");
+    // xhr.setRequestHeader("Content-type", "application/json; charset=utf-8;");
     // 如果需要像 html 表单那样 POST 数据，请使用 setRequestHeader() 来添加 http 头。
     // xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhr.send(data);

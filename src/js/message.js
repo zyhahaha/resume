@@ -47,9 +47,11 @@ var vm = new Vue({
     },
     initData: function() {
       var that = this;
-      var params = {
-        type: 'IP'
-      };
+      var params = JSON.stringify({
+        type: 'IP',
+        pageIndex: 1,
+        pageSize: 20
+      });
       ajax(
         'POST',
         'http://api.123123.store/powerful/list',
