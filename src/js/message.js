@@ -22,7 +22,7 @@ var vm = new Vue({
       });
       ajax(
         'POST',
-        'http://api.123123.store/powerful',
+        'https://api.123123.store/powerful',
         params,
         function (res) {
           that.commentMsg = ''
@@ -46,7 +46,7 @@ var vm = new Vue({
       });
       ajax(
         'POST',
-        'http://api.123123.store/powerful/list',
+        'https://api.123123.store/powerful/list',
         params,
         function (res) {
           var dataList = JSON.parse(res).data.list
