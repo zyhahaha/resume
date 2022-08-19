@@ -74,6 +74,7 @@ body {
   padding: 0.04rem 0.11rem;
   padding-top: 0.5rem;
   border-radius: 5px;
+  border: 1px solid #e7ded2;
 }
 .input textarea:hover {
   border-color: #faad14;
